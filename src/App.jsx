@@ -1,25 +1,22 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./Pages/HomePage";
-import Product from "./Pages/Product";
-import Pricing from "./Pages/Pricing";
-import PageNotFound from "./Pages/PageNotFound";
-import PageNav from "./Components/PageNav";
-import AppLayout from "./Pages/AppLayout";
+import Homepage from "./pages/Homepage";
+import Product from "./pages/Product";
+import Pricing from "./pages/Pricing";
+import Login from "./pages/Login";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
     <div className="App">
-          <h1>WorldWise</h1>
+      <h1>WorldWise</h1>
 
       <Router>
         <Routes>
-                  <Route path="/" element={<HomePage />} />
-                  <Route path="/product" element={<Product />} />
-                  <Route path="/pricing" element={<Pricing />} />
-                  <Route path="/app" element={<AppLayout />} />
-                  <Route path="/*" element={<PageNotFound />} />
-                  
+          <Route path="/" element={<Homepage />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </Router>
     </div>
