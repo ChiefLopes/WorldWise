@@ -3,7 +3,8 @@ import styles from "./Homepage.module.css";
 export default function Homepage() {
   return (
     <main className={styles.homepage}>
-      <section>
+          <section>
+              
         <h1>
           You travel the world.
           <br />
