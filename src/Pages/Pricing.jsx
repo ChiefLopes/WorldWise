@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import PageNav from "../Components/PageNav";
 
 const Pricing = () => {
   return (
-    <div>Pricing</div>
-  )
-}
+      <div>
+          <h1>Pricing</h1>
+          
+          <PageNav />
+          
+    </div>
+  );
+};
 
-export default Pricing
+export default Pricing;

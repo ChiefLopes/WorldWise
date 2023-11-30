@@ -1,13 +1,20 @@
-import React from 'react'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import PageNav from "../Components/PageNav";
+import AppNav from "../Components/AppNav";
 
 const HomePage = () => {
   return (
-      <div>
+    <div>
           <h1>Home</h1>
           
-          <a href="/pricing">Pricing</a>
+          <PageNav />
+          <AppNav />
+          
+          <NavLink to="/app">Go to the App</NavLink>
+    
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
