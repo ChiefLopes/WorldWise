@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./PageNav.module.css";
 
-import Logo from "./Logo"; // Adjust the path based on the actual location of the Logo component
+import Logo from "./Logo"; 
 
 const PageNav = () => {
   return (
@@ -17,7 +17,7 @@ const PageNav = () => {
             <NavLink to="/product">Product</NavLink>
           </li>
           <li>
-            <NavLink to="/login">Login</NavLink>
+            <NavLink to="/login" className={styles.ctaLink}>Login</NavLink>
           </li>
         </ul>
       </nav>

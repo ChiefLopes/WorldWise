@@ -1,11 +1,11 @@
 import React from "react";
 import AppNav from "../Components/AppNav";
+import SideBar from "../Components/SideBar";
 
 const AppLayout = () => {
   return (
     <div>
-      <AppNav />
-      <h1>App</h1>
+     <SideBar />
     </div>
   );
 };
