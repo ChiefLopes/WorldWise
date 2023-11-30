@@ -6,7 +6,7 @@ const Footer = () => {
 
   // Get day, month, and year
   const day = currentDate.getUTCDate();
-  const month = currentDate.getUTCMonth() + 1; // Months are zero-based
+  const month = currentDate.getUTCMonth() + 1; // Because months are zero-based
   const year = currentDate.getUTCFullYear();
 
   return (
