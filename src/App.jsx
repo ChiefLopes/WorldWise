@@ -8,7 +8,7 @@ import Login from "./pages/Login";
 import PageNotFound from "./pages/PageNotFound";
 import AppLayout from "./pages/AppLayout";
 import CityList from "./Components/CityList";
-import { useEffect } from "react";
+import { useEffect, useState} from "react";
 
 const BASE_URL = "http://localhost:8000";
 
@@ -19,7 +19,7 @@ function App() {
   useEffect(function () {
     async function fetchCities() {
         try {
-          isLoading(true);
+          setIsLoading(true);
         const res = await fetch(`${BASE_URL}/cities`);
         const data = await res.json();
         setCities(data);
@@ -44,10 +44,16 @@ function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/login" element={<Login />} />
           <Route path="/app" element={<AppLayout />}>
-            <Route path="cities" element={<CityList />} />
+            <Route
+              index
+              element={<CityList cities={cities} isLoading={isLoading} />}
+            />
+            <Route
+              path="cities"
+              element={<CityList cities={cities} isLoading={isLoading} />}
+            />
             <Route path="countries" element={<p>List of countries</p>} />
             <Route path="form" element={<p>Form</p>} />
-            <Route index element={<CityList />} />
           </Route>
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
