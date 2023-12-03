@@ -21,7 +21,7 @@ function City() {
     notes: "My favorite city so far!",
   };
 
-    const { cityName, emoji, date, notes } = currentCity;
+    const { cityName, emoji, date, notes} = currentCity;
     
     return <h1>City {id}</h1>
 
