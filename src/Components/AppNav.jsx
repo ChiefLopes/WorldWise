@@ -7,6 +7,7 @@ const AppNav = () => {
     return <nav className={styles.nav}>
         <ul>
             <li>
+                {/* Leads to the city route */}
                 <NavLink to="cities">Cities</NavLink>
             </li>
             <li>
