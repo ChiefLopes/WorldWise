@@ -16,6 +16,7 @@ const Map = () => {
           Position: {lat}, {lng}
         </h1>
 
+            {/* Used the useParams hook to get the latitude and longitude of each location */}
         <button onClick={() => setSearchParams({ lat: 30, lng: 50 })}>
           Change pos
         </button>
