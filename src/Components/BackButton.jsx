@@ -10,7 +10,7 @@ const BackButton = () => {
     <Button
       type="back"
       onClick={(e) => {
-        //   Used the e.preventDefault function to stop the form action on the button so that the page won't auto-relaod when clicked
+        //   Used the e.preventDefault function to stop the form action on the button so that the page won't auto-reload when clicked
         e.preventDefault();
         move(-1);
       }}>
