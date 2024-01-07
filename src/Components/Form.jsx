@@ -5,6 +5,7 @@ import { useState } from "react";
 import styles from "./Form.module.css";
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
+import BackButton from "./BackButton";
 
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -54,11 +55,7 @@ function Form() {
 
       <div className={styles.buttons}>
        <Button type="primary">Add</Button>
-              <Button type="back" onClick={(e) => {
-                //   Used the e.preventDefault function to stop the form action on the button so that the page won't auto-relaod when clicked
-                  e.preventDefault()
-                  move(-1)
-              }}>&larr; Back</Button>
+            <BackButton />
       </div>
     </form>
   );
