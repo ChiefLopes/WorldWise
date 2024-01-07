@@ -55,7 +55,7 @@ function Form() {
 
       <div className={styles.buttons}>
        <Button type="primary">Add</Button>
-       {/* This utton takes u back to the main paggit e */}
+       {/* This utton takes u back to the home page */}
             <BackButton />
       </div>
     </form>
