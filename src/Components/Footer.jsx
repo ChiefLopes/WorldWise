@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   const currentDate = new Date();
 
-  // Get day, month, and year
+  // Get day, month, and year from javascript
   const day = currentDate.getUTCDate();
   const month = currentDate.getUTCMonth() + 1; // Because months are zero-based
   const year = currentDate.getUTCFullYear();
